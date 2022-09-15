@@ -12,9 +12,11 @@ namespace Beginning
         {
             Console.WriteLine("Gib mir ein Wort!");
             string entry = Console.ReadLine();
-           string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
-            Console.WriteLine("Der alte Text war " + entry);
-            Console.WriteLine("Der neue Text ist " + replaced_entry);
+           
+            string trimmed_entry = entry.Trim(' ', 'a');
+
+            Console.WriteLine("Old string " + entry + ":");
+            Console.WriteLine("New string " + trimmed_entry + ":");
 
             Console.ReadLine();
         }
