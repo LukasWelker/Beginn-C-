@@ -10,21 +10,24 @@ namespace Beginning
     {
         static void Main(string[] args)
         {
-            int i = 0;
-            do
-            {
-                Console.WriteLine(i);
-                i++;
-            } while (i < 10);
+            string entry = "Das ist ein Text mit Wörtern";
 
-            while (i < 20)
+            //0: Das
+            //1: ist
+            //2: ein
+            //3: Text
+            //4: mit
+            //5: Wörtern
+            string[] entries = entry.Split(' ');
+            foreach(String wort in entries)
             {
-                Console.WriteLine(i);
-                i++;
+                Console.WriteLine(wort);    
             }
-
-
-                
+            for (int i= 0; i < entries.Length; i++)
+            {
+                Console.WriteLine(entries[i]);  
+            }
+           
 
             Console.ReadLine();
         }
