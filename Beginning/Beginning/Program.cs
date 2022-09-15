@@ -10,20 +10,12 @@ namespace Beginning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie alt bist du?");
-            int age = Convert.ToInt32(Console.ReadLine());
-            if(age < 18)
-            {
-                Console.WriteLine("Du kommst hier nicht rein!");
-            }
-            else if (age < 28)
-            {
-                Console.WriteLine("Bitte ihren Ausweis zeigen");
-            }
-            else
-            {
-                Console.WriteLine("Viel Spaß auf der Feier!!");          
-            }
+            Console.WriteLine("Gib mir ein Wort!");
+            string entry = Console.ReadLine();
+           string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+            Console.WriteLine("Der alte Text war " + entry);
+            Console.WriteLine("Der neue Text ist " + replaced_entry);
+
             Console.ReadLine();
         }
 
