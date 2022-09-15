@@ -15,9 +15,15 @@ namespace Beginning
 
             Console.WriteLine("Hello " + name);
 
-            Console.WriteLine("Wie alt bist du ?");
+            Console.WriteLine("Wie alt bist du aktuell?");
             int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Du bist also " + age);
+
+            Console.WriteLine("Wie alt bist du in X Jahren");
+            int nextYear = Convert.ToInt32(Console.ReadLine());
+            int sumYears = age + nextYear;
+            Console.WriteLine("Du bist also " + nextYear + " Jahren, " + sumYears );
+
+
 
             Console.ReadLine();
           
